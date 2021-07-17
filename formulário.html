@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(90, 199, 90);
+        }
+        .box{
+            position:absolute;
+            top:30%;
+            left:40%;
+            background-color: rgb(84, 204, 168);
+            padding:15px;
+            border-radius: 15px;
+            width:20%;
+        }
+        fieldset{
+            border:3px solid rgb(3, 53, 3);
+        }
+        legend{
+            border:1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+        .inputbox{
+            position: relative;
+        }
+        #submit{
+            background-color: linear-gradient(rgb(117, 184, 117));
+            width:100px;
+            border:none;
+            padding:5px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Cadastro de Anúncios</b></legend>
+                <br>
+                <div class="inputbox">
+                    <label for="nome"><b>Nome do Anúncio</b></label>
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="cliente"><b>Nome do Cliente</b></label>
+                    <input type="text" name="cliente" id="cliente" class="inputUser" required>
+                    
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <label for="inicio"><b>Data de Início</b></label>
+                        <input type="date" name="inicio" id="inicio" class="inputUser" required>
+                                                </div>
+                        <br>
+                        <div class="inputbox">
+                            <label for="termino"><b>Data de Término</b></label>
+                            <input type="date" name="termino" id="termino" class="inputUser" required>
+                            
+                            </div>
+                            <br>
+                            <div class="inputbox">
+                                <label for="invest"><b>Investimento Por Dia</b></label>
+                                <input type="text" name="invest" id="invest" class="inputUser" required>
+                                
+                                </div>
+                                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
